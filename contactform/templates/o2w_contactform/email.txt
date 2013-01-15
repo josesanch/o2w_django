@@ -1,0 +1,6 @@
+
+Name: {{ request.POST.name }}
+Location: {{ request.POST.location }}
+E-mail: {{ request.POST.email }}
+Phone: {{ request.POST.phone }}
+Message: {{ request.POST.message }}

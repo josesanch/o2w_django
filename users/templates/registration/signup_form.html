@@ -1,0 +1,8 @@
+<form method="post" action="{% url user-signup %}" id="user-signup" class='user-form'>
+  {% csrf_token %}
+  {{ object.as_p }}
+  <div class='buttons center'>
+    <input type="submit" name="sent" value="Signup" />
+  </div>
+  <input type="hidden" name="next" value="{{ next }}" />
+</form>

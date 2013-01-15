@@ -1,0 +1,2 @@
+var Rating = (function() {
+});

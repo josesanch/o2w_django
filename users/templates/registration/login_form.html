@@ -1,0 +1,8 @@
+<form method="post" action="{% url user-login %}" id="user-login" class='user-form'>
+  {% csrf_token %}
+  {{ form.as_p }}
+  <div class='buttons center'>
+    <input type="submit" name="sent" value="Login" />
+  </div>
+  <input type="hidden" name="next" value="{{ next }}" />
+</form>

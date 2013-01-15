@@ -1,0 +1,12 @@
+
+{% if not form %}
+  <p class='gracias'>{{ instance.thankyou_message }}</p>
+{% else %}
+  <form method="post" id="o2w_contact_form" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class='submit'>
+      <input type="submit" name="submit" value="{{instance.submit_button}}" />
+    </div>
+  </form>
+{% endif %}
